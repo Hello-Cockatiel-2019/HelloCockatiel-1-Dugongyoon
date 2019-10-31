@@ -26,16 +26,16 @@ function App() {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar style={{marginRight:"20px"}}>
-            <NavItem style={{marginRight:"20px",marginLeft:"20px"}}>
+            <NavItem style={{marginRight:"50px",marginLeft:"0px"}}>
               <NavLink href="#" style={{color:"white",fontSize:"24px",fontWeight:"bold"}}>HOME</NavLink>
             </NavItem>
-            <NavItem style={{marginRight:"20px",marginLeft:"20px"}}>
+            <NavItem style={{marginRight:"50px",marginLeft:"0px"}}>
               <NavLink href="#" style={{color:"white",fontSize:"24px",fontWeight:"bold"}}>INFO</NavLink>
             </NavItem>
-            <NavItem style={{marginRight:"20px",marginLeft:"20px"}}>
+            <NavItem style={{marginRight:"50px",marginLeft:"0px"}}>
               <NavLink href="#" style={{color:"white",fontSize:"24px",fontWeight:"bold"}}>BIOLOGY</NavLink>
             </NavItem>
-            <NavItem style={{marginRight:"20px",marginLeft:"20px"}}>
+            <NavItem style={{marginRight:"50px",marginLeft:"0px"}}>
               <NavLink href="#" style={{color:"white",fontSize:"24px",fontWeight:"bold"}}>TYPE</NavLink>
             </NavItem>
           </Nav>
