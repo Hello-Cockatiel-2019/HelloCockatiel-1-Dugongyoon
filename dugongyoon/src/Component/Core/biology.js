@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
@@ -76,9 +76,8 @@ export default class Bio extends React.Component{
     render(){
        return(
            <div>
-            
             <Background/>
-            <Navbar1 name="Biology"/>
+            <Navbar1 name="BIOLOGY"/>
             <Desktop>
             <Text1>
                 <Row>
