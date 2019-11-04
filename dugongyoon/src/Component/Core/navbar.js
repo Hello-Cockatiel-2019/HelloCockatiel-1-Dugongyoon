@@ -62,21 +62,21 @@ const Text3 = styled.div`
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
               <NavItem>
-              <NavLink href="/"><Nav2><Text2 value="Home"/>
+              <NavLink href="/"><Nav2><Text2 value="HOME"/>
                   </Nav2>
                   </NavLink>
               </NavItem>
             <NavItem>
             <NavLink href="/info/" >
-                <Nav2><Text2 value="Info"/></Nav2>
+                <Nav2><Text2 value="INFO"/></Nav2>
                 </NavLink>
             </NavItem>   
             <NavItem>
               <NavLink href="/biology/" >
-                  <Nav2><Text2 value="Biology"/></Nav2></NavLink>
+                  <Nav2><Text2 value="BIOLOGY"/></Nav2></NavLink>
               </NavItem>
             <NavItem>
-              <NavLink href="/type/"><Nav2><Text2 value="Type"/></Nav2></NavLink>
+              <NavLink href="/type/"><Nav2><Text2 value="TYPE"/></Nav2></NavLink>
               </NavItem>
           </Nav>
         </Collapse>

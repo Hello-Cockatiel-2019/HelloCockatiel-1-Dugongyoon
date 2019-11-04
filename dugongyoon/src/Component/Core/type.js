@@ -110,6 +110,11 @@ export default class Type extends React.Component{
         padding : 8%;   
         
 `;
+const Text3 = styled.div`
+@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+        font-family: 'Mitr', sans-serif;
+        text-align: center;
+`;
         const Title=styled.div`
         font-weight : bolder;
         font-size : 24px;
@@ -132,7 +137,7 @@ export default class Type extends React.Component{
        return(
            <div>
             <Background/>
-            <Navbar1 name="Type"/>
+            <Navbar1 name="TYPE"/>
             <Desktop>
             <Text1>
             <Row>
@@ -196,8 +201,8 @@ export default class Type extends React.Component{
             </Text1>
             </Desktop>
             <Mobile>
-            <center><Imgmol1 src ="/img/info.png"/></center>
-            <center>
+            <center><Imgmol1 src ="/img/type.png"/></center>
+            <Text3>
             <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} >
       <DropdownToggle color ="yel" caret>
         {this.state.dropDownValue}
@@ -210,7 +215,7 @@ export default class Type extends React.Component{
         <DropdownItem><div onClick ={this.changeState5}>มานาตีอินเดียตะวันตก</div></DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
-            </center>
+            </Text3>
             <Textbox2 style={{display: this.state.Item1 ?'block' :'none'}}>
                     <center><img src= "/img/type_1.jpg" width = "235px"/></center>
                     <Title>พะยูน</Title>

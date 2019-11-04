@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
@@ -74,7 +74,7 @@ export default class info extends React.Component{
         return(
             <div>            
             <Background/>
-            <Navbar1 name ="Info"/>
+            <Navbar1 name ="INFO"/>
             <Desktop>
             <Row1>
                 <Row>
