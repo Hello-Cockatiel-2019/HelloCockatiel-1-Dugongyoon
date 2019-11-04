@@ -5,17 +5,18 @@ import 'bootstrap/dist/js/bootstrap.min';
 import 'jquery/dist/jquery.min';
 import Background from './background';
 import Navbar1 from './navbar';
-
+const Payoon = styled.img`
+    width: 414px;
+`
 export default class home extends React.Component{
     render(){
         return(
             <div>
             <Background/>
-            <Navbar1/>
+            <Navbar1 name ="Home"/>
             <center>
-                <img src ="/img/logo big.png" width="414px"/>
+            <Payoon src = "/img/logo big.png" alt="Payoon Image"/>
             </center>
-            
             
             </div>
         )

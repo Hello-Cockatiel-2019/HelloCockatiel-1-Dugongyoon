@@ -10,13 +10,13 @@ const FixedBackground = styled.div`
   background-size:cover;
   background-image:url('/img/bg1536x900.png');
 
-    @media (max-width: 1440px){
+    @media (max-width: 1439px){
       background-image:url('/img/bg1440x1024.png');
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       background-image:url('/img/bg768x1000.png');
     }
-    @media only screen and (max-width: 414px){
+    @media only screen and (max-width: 413px){
       background-position: bottom;
       background-image:url('/img/bg414x896.png');
     }

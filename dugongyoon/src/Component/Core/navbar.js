@@ -9,7 +9,12 @@ import {
   NavItem,
   NavLink
   } from 'reactstrap';
-const Nav1 = styled.div`
+
+const Navex1 = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+  const x = props.name;
+  const Nav1 = styled.div`
     margin-left: 3%;
     margin-right: 3%;
     padding-bottom:2%;
@@ -22,45 +27,57 @@ const Nav2 = styled.div`
 const Text1 = styled.div`
         @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
         font-family: 'Mitr', sans-serif;
-        margin-left : 10px;   
+        
         font-weight : medium;
         font-size : 24px;
         text-align :center;
         color : white;
-`;
-const Navex1 = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
+`;  
+const Text3 = styled.div`
+        @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+        font-family: 'Mitr', sans-serif;        
+        font-weight : medium;
+        font-size : 24px;
+        text-align :center;
+        color : black;
+        text-decoration: underline;
+        text-underline-position: under;
+        
+`; 
+    
+    function Text2(props){
+        if(x==props.value){
+            return <Text3>{props.value}</Text3>
+        }
+        else{
+            return <Text1>{props.value}</Text1>
+        }
+    }
   return (
     <div>
     <Nav1>
-      <Navbar dark expand="md" >
+      <Navbar light expand="md" >
         <NavbarBrand href="/"><img src = "/img/logoweb.png"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
               <NavItem>
-              <NavLink href="/"><Text1>
-                  <Nav2>Home</Nav2>
-                  </Text1></NavLink>
+              <NavLink href="/"><Nav2><Text2 value="Home"/>
+                  </Nav2>
+                  </NavLink>
               </NavItem>
             <NavItem>
-            <NavLink href="/info/" ><Text1>
-                <Nav2>Info</Nav2>
-                </Text1></NavLink>
+            <NavLink href="/info/" >
+                <Nav2><Text2 value="Info"/></Nav2>
+                </NavLink>
             </NavItem>   
             <NavItem>
-              <NavLink href="/biology/" ><Text1>
-                  <Nav2>Biology</Nav2></Text1></NavLink>
+              <NavLink href="/biology/" >
+                  <Nav2><Text2 value="Biology"/></Nav2></NavLink>
               </NavItem>
-            
-            
             <NavItem>
-              <NavLink href="/type/"><Text1><Nav2>Type</Nav2></Text1></NavLink>
+              <NavLink href="/type/"><Nav2><Text2 value="Type"/></Nav2></NavLink>
               </NavItem>
-            
           </Nav>
         </Collapse>
       </Navbar>
