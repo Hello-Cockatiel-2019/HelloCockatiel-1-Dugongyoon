@@ -6,7 +6,7 @@ import 'jquery/dist/jquery.min';
 import Background from './background';
 import Navbar1 from './navbar';
 const Payoon = styled.img`
-    height : 600px;
+    height : 580px;
 `
 export default class home extends React.Component{
     render(){

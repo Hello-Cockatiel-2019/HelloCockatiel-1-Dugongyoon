@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 const FixedBackground = styled.div`
   z-index:-2;
@@ -21,7 +21,7 @@ const FixedBackground = styled.div`
       background-image:url('/img/bg414x896.png');
     }
 `
-export default class background extends Component {
+export default class background extends React.Component {
   render () {
     return (
       <FixedBackground/>
