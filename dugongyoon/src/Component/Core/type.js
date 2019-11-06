@@ -77,15 +77,7 @@ export default class Type extends React.Component{
         font-weight : medium;
         font-size : 20px;
 `;
-        const Line = styled.div`
-        background-color: #FFD600;
-        margin-left: 3%;
-        margin-right: 3%;
-        margin-top: -1.5%;
-        font-size :10px;
-        border-radius: 20px;
-        color: #FFD600;
-        `
+        
         const Imgmol1 = styled.img`
         width: 295px;
 `;
@@ -97,7 +89,7 @@ export default class Type extends React.Component{
         margin-top:1%;
         background-color: white;
         border-radius: 20px;   
-        padding : 8%;   
+        border-bottom : 15px solid #FFD600;
         `;
         const Textbox2 = styled.div`
         @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
@@ -110,10 +102,15 @@ export default class Type extends React.Component{
         padding : 8%;   
         
 `;
-const Text3 = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
-        font-family: 'Mitr', sans-serif;
-        text-align: center;
+        const Img3 = styled.img`
+        width:100%;
+        height: 362px;
+        border-radius: 20px 20px 0px 0px;
+        `
+        const Text3 = styled.div`
+        @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+                font-family: 'Mitr', sans-serif;
+                text-align: center;
 `;
         const Title=styled.div`
         font-weight : bolder;
@@ -165,37 +162,36 @@ const Text3 = styled.div`
                 </Col>
                 <Col>
                     <Textbox style={{display: this.state.Item1 ?'block' :'none'}}>
-                    <center><img src= "/img/type_1.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_1.jpg"/></center>
                     <Title>พะยูน</Title>
                     <Content>(พบในประเทศไทย) : Dugong Dugon (20,1776) กระจายพันธุ์ในบริเวณชายฝั่งที่มีแนวหญ้าทะเล ในทะเลเขตร้อน และทะเลเขตกึ่งร้อนแถบมหาสมุทรอินเดีย และมหาสมุทรแปซิฟิก</Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item2 ?'block' :'none'}}>
-                    <center><img src= "/img/type_2.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_2.jpg"/></center>
                     <Title>วัวทะเลสเตลเลอร์</Title>
                     <Content>Dugong Dugon (Muller,1776) Steller,sea cow
 กระจายพันธุ์บริเวนเขตอบอุ่นกึ่งหนาวถึงบริเวณเขตกึ่งขั้วโลก บริเวณช่องแคบแบร่ิง ซึ่งอยู่ระหว่างประเทศสหรัฐอเมริกาและสหภาพโซเวียต 
 สูญพันธุ์ไปแล้วเมื่อปี 2311 จากการล่าของมนุษย์ Nishi waki and Mash,1985</Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item3 ?'block' :'none'}}>
-                    <center><img src= "/img/type_3.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_3.jpg"/></center>
                     <Title>มานาตีแอฟฟริกาตะวันตก</Title>
                     <Content>Trichechus senegalensis (Link,1795) 
 กระจายพันธุ์อยู่บริเวณชายฝั่ง
 ทะเลน้ำกร่อยและน้ำจืดในประเทศเซเนกัล ขึ้นไปถึงตอนใต้ของประเทศแองโกลา ซึ่งอยู่ทางทิศตะวันตกของทวีปแอฟริกา </Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item4 ?'block' :'none'}}>
-                    <center><img src= "/img/type_4.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_4.jpg"/></center>
                     <Title>มานาตีอเมซอน</Title>
                     <Content>Trichechus senegalensis (Natterer,1883)
 กระจายพันธุ์อยู่บริเวณชายฝั่งทะเลน้ำกร่อย และน้ำจืด ในประเทศเซเนกัล ขึ้นไปถึงตอนใต้ของประเทสแองโกลา ซึ่งอยู่ทางทิศตะวันตกของทวีปแอฟริกา </Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item5 ?'block' :'none'}}>
-                    <center><img src= "/img/type_5.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_5.jpg"/></center>
                     <Title>มานาตีอินเดียตะวันตก</Title>
                     <Content>Trichechus senegalensis (Linnarus,1758)
 กระจายพันธุ์บริเวณชายฝั่ง น้ำกร่อย และเเม่น้ำในฟลอริดา ทะเลแคริบเบียน ถึงตอนเหนือของทวีปอเมริกาใต้</Content>    
                     </Textbox>
-                    <Line>d</Line>
                 </Col>
             </Row>
             </Text1>

@@ -17,7 +17,7 @@ const Navex1 = (props) => {
   const Nav1 = styled.div`
     margin-left: 3%;
     margin-right: 3%;
-    padding-bottom:2%;
+    padding-bottom: 1%;
     padding-top:2%;
 `;
 const Nav2 = styled.div`
