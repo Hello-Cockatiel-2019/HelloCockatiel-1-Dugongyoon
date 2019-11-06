@@ -69,7 +69,6 @@ export default class Type extends React.Component{
         font-family: 'Mitr', sans-serif;
         margin-left: 3%;
         margin-right: 3%;
-        margin-top : 2%;
         padding-left : 3%; 
         padding-right : 3%;
         padding-top :2%;

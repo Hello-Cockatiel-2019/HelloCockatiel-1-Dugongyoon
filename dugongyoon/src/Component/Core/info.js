@@ -10,6 +10,7 @@ import Navbar1 from './navbar';
 const Row1 = styled.div`
         margin-left: 6%;
         margin-right: 6%;
+        margin-top : 5%;
         `;
 const Img1 = styled.div`
         text-align:center;
