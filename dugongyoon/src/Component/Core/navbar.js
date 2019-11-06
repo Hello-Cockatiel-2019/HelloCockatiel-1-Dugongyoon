@@ -9,7 +9,7 @@ import {
   NavItem,
   NavLink
   } from 'reactstrap';
-
+import './navbar.css';
 const Navex1 = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -46,7 +46,7 @@ const Text3 = styled.div`
 `; 
     
     function Text2(props){
-        if(x==props.value){
+        if(x===props.value){
             return <Text3>{props.value}</Text3>
         }
         else{
@@ -57,7 +57,7 @@ const Text3 = styled.div`
     <div>
     <Nav1>
       <Navbar light expand="md" >
-        <NavbarBrand href="/"><img src = "/img/logoweb.png"/></NavbarBrand>
+        <NavbarBrand href="/"><img src = "/img/logoweb.png" width="100%" alt="logo"/></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
