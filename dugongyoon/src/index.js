@@ -7,7 +7,7 @@ import Biology from './biology';
 import type from './type';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Router,Route,Link,browserHistory} from 'react-router';
+import {Router,Route,browserHistory} from 'react-router';
 ReactDOM.render(
     <Router history = {browserHistory}>
         <Route path = "/" component ={App}/>

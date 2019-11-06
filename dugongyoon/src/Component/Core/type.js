@@ -59,17 +59,12 @@ export default class Type extends React.Component{
     render(){
         const Img1 = styled.img`
         width = 340px;
-        `;
-        const Img2 = styled.img`
-        height = 362px;
-        text-align = center;
-        `;
+        `;  
         const Text1 = styled.div`
         @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
         font-family: 'Mitr', sans-serif;
         margin-left: 3%;
         margin-right: 3%;
-        margin-top : 2%;
         padding-left : 3%; 
         padding-right : 3%;
         padding-top :2%;
@@ -77,15 +72,7 @@ export default class Type extends React.Component{
         font-weight : medium;
         font-size : 20px;
 `;
-        const Line = styled.div`
-        background-color: #FFD600;
-        margin-left: 3%;
-        margin-right: 3%;
-        margin-top: -1.5%;
-        font-size :10px;
-        border-radius: 20px;
-        color: #FFD600;
-        `
+        
         const Imgmol1 = styled.img`
         width: 295px;
 `;
@@ -97,7 +84,7 @@ export default class Type extends React.Component{
         margin-top:1%;
         background-color: white;
         border-radius: 20px;   
-        padding : 8%;   
+        border-bottom : 15px solid #FFD600;
         `;
         const Textbox2 = styled.div`
         @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
@@ -110,10 +97,14 @@ export default class Type extends React.Component{
         padding : 8%;   
         
 `;
-const Text3 = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
-        font-family: 'Mitr', sans-serif;
-        text-align: center;
+        const Img3 = styled.img`
+        width:100%;
+        border-radius: 20px 20px 0px 0px;
+        `
+        const Text3 = styled.div`
+        @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+                font-family: 'Mitr', sans-serif;
+                text-align: center;
 `;
         const Title=styled.div`
         font-weight : bolder;
@@ -126,14 +117,13 @@ const Text3 = styled.div`
         font-size: 20px;
         text-align : center;
         margin : 3%;
-        `;
+`;
         const Content2 = styled.p`
         color:#7b7b7b;
         font-weight : medium;
         font-size : 16px;
         text-align :center;
-        `;
-
+`;
        return(
            <div>
             <Background/>
@@ -143,65 +133,64 @@ const Text3 = styled.div`
             <Row>
                 <Col md = "auto">
                     <div onClick = {this.changeState1}>
-                        <Img1 src = "/img/type1s.png" style={{display: this.state.Item1 ?'block' :'none'}}/>
-                        <Img1 src = "/img/type1.png" style={{display: this.state.Item1 ?'none' :'block'}}/>
+                        <Img1 src = "/img/type1s.png" style={{display: this.state.Item1 ?'block' :'none'}} alt ="active img1"/>
+                        <Img1 src = "/img/type1.png" style={{display: this.state.Item1 ?'none' :'block'}} alt ="passive img1"/>
                     </div>
                     <div onClick = {this.changeState2}>
-                        <Img1 src = "/img/type2s.png" style={{display: this.state.Item2 ?'block' :'none'}}/>
-                        <Img1 src = "/img/type2.png"style={{display: this.state.Item2 ?'none' :'block'}}/>
+                        <Img1 src = "/img/type2s.png" style={{display: this.state.Item2 ?'block' :'none'}} alt ="active img2"/>
+                        <Img1 src = "/img/type2.png"style={{display: this.state.Item2 ?'none' :'block'}} alt ="passive img2"/>
                     </div>
                     <div onClick = {this.changeState3}>
-                        <Img1 src = "/img/type3s.png" style={{display: this.state.Item3 ?'block' :'none'}}/>
-                        <Img1 src = "/img/type3.png"style={{display: this.state.Item3 ?'none' :'block'}}/>
+                        <Img1 src = "/img/type3s.png" style={{display: this.state.Item3 ?'block' :'none'}} alt ="active img3"/>
+                        <Img1 src = "/img/type3.png"style={{display: this.state.Item3 ?'none' :'block'}} alt ="passive img3"/>
                     </div>
                     <div onClick = {this.changeState4}>
-                        <Img1 src = "/img/type4s.png" style={{display: this.state.Item4 ?'block' :'none'}}/>
-                        <Img1 src = "/img/type4.png"style={{display: this.state.Item4 ?'none' :'block'}}/>
+                        <Img1 src = "/img/type4s.png" style={{display: this.state.Item4 ?'block' :'none'}} alt ="active img4"/>
+                        <Img1 src = "/img/type4.png"style={{display: this.state.Item4 ?'none' :'block'}} alt ="passive img4"/>
                     </div>
                     <div onClick = {this.changeState5}>
-                        <Img1 src = "/img/type5s.png" style={{display: this.state.Item5 ?'block' :'none'}}/>
-                        <Img1 src = "/img/type5.png"style={{display: this.state.Item5 ?'none' :'block'}}/>
+                        <Img1 src = "/img/type5s.png" style={{display: this.state.Item5 ?'block' :'none'}} alt ="active img5"/>
+                        <Img1 src = "/img/type5.png"style={{display: this.state.Item5 ?'none' :'block'}} alt ="passive img5"/>
                     </div>
                 </Col>
                 <Col>
                     <Textbox style={{display: this.state.Item1 ?'block' :'none'}}>
-                    <center><img src= "/img/type_1.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_1d.jpg" alt="type1 desktop"/></center>
                     <Title>พะยูน</Title>
                     <Content>(พบในประเทศไทย) : Dugong Dugon (20,1776) กระจายพันธุ์ในบริเวณชายฝั่งที่มีแนวหญ้าทะเล ในทะเลเขตร้อน และทะเลเขตกึ่งร้อนแถบมหาสมุทรอินเดีย และมหาสมุทรแปซิฟิก</Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item2 ?'block' :'none'}}>
-                    <center><img src= "/img/type_2.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_2d.jpg" alt="type2 desktop"/></center>
                     <Title>วัวทะเลสเตลเลอร์</Title>
                     <Content>Dugong Dugon (Muller,1776) Steller,sea cow
 กระจายพันธุ์บริเวนเขตอบอุ่นกึ่งหนาวถึงบริเวณเขตกึ่งขั้วโลก บริเวณช่องแคบแบร่ิง ซึ่งอยู่ระหว่างประเทศสหรัฐอเมริกาและสหภาพโซเวียต 
 สูญพันธุ์ไปแล้วเมื่อปี 2311 จากการล่าของมนุษย์ Nishi waki and Mash,1985</Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item3 ?'block' :'none'}}>
-                    <center><img src= "/img/type_3.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_3d.jpg" alt="type3 desktop"/></center>
                     <Title>มานาตีแอฟฟริกาตะวันตก</Title>
                     <Content>Trichechus senegalensis (Link,1795) 
 กระจายพันธุ์อยู่บริเวณชายฝั่ง
 ทะเลน้ำกร่อยและน้ำจืดในประเทศเซเนกัล ขึ้นไปถึงตอนใต้ของประเทศแองโกลา ซึ่งอยู่ทางทิศตะวันตกของทวีปแอฟริกา </Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item4 ?'block' :'none'}}>
-                    <center><img src= "/img/type_4.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_4d.jpg" alt="type4 desktop"/></center>
                     <Title>มานาตีอเมซอน</Title>
                     <Content>Trichechus senegalensis (Natterer,1883)
 กระจายพันธุ์อยู่บริเวณชายฝั่งทะเลน้ำกร่อย และน้ำจืด ในประเทศเซเนกัล ขึ้นไปถึงตอนใต้ของประเทสแองโกลา ซึ่งอยู่ทางทิศตะวันตกของทวีปแอฟริกา </Content>
                     </Textbox>
                     <Textbox style={{display: this.state.Item5 ?'block' :'none'}}>
-                    <center><img src= "/img/type_5.jpg" height ="362px"/></center>
+                    <center><Img3 src= "/img/type_5d.jpg" alt="type5 desktop"/></center>
                     <Title>มานาตีอินเดียตะวันตก</Title>
                     <Content>Trichechus senegalensis (Linnarus,1758)
 กระจายพันธุ์บริเวณชายฝั่ง น้ำกร่อย และเเม่น้ำในฟลอริดา ทะเลแคริบเบียน ถึงตอนเหนือของทวีปอเมริกาใต้</Content>    
                     </Textbox>
-                    <Line>d</Line>
                 </Col>
             </Row>
             </Text1>
             </Desktop>
             <Mobile>
-            <center><Imgmol1 src ="/img/type.png"/></center>
+            <center><Imgmol1 src ="/img/type.png" alt="type logo"/></center>
             <Text3>
             <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle} >
       <DropdownToggle color ="yel" caret>
@@ -217,32 +206,32 @@ const Text3 = styled.div`
     </ButtonDropdown>
             </Text3>
             <Textbox2 style={{display: this.state.Item1 ?'block' :'none'}}>
-                    <center><img src= "/img/type_1.jpg" width = "235px"/></center>
+                    <center><img src= "/img/type_1.jpg" width = "235px" alt = "type1 mobile"/></center>
                     <Title>พะยูน</Title>
                     <Content2>(พบในประเทศไทย) : Dugong Dugon (20,1776) กระจายพันธุ์ในบริเวณชายฝั่งที่มีแนวหญ้าทะเล ในทะเลเขตร้อน และทะเลเขตกึ่งร้อนแถบมหาสมุทรอินเดีย และมหาสมุทรแปซิฟิก</Content2>
                     </Textbox2>
                     <Textbox2 style={{display: this.state.Item2 ?'block' :'none'}}>
-                    <center><img src= "/img/type_2.jpg" width = "235px"/></center>
+                    <center><img src= "/img/type_2.jpg" width = "235px" alt = "type2 mobile"/></center>
                     <Title>วัวทะเลสเตลเลอร์</Title>
                     <Content2>Dugong Dugon (Muller,1776) Steller,sea cow
 กระจายพันธุ์บริเวนเขตอบอุ่นกึ่งหนาวถึงบริเวณเขตกึ่งขั้วโลก บริเวณช่องแคบแบร่ิง ซึ่งอยู่ระหว่างประเทศสหรัฐอเมริกาและสหภาพโซเวียต 
 สูญพันธุ์ไปแล้วเมื่อปี 2311 จากการล่าของมนุษย์ Nishi waki and Mash,1985</Content2>
                     </Textbox2>
                     <Textbox2 style={{display: this.state.Item3 ?'block' :'none'}}>
-                    <center><img src= "/img/type_3.jpg" width = "235px"/></center>
+                    <center><img src= "/img/type_3.jpg" width = "235px" alt = "type3 mobile"/></center>
                     <Title>มานาตีแอฟฟริกาตะวันตก</Title>
                     <Content2>Trichechus senegalensis (Link,1795) 
 กระจายพันธุ์อยู่บริเวณชายฝั่ง
 ทะเลน้ำกร่อยและน้ำจืดในประเทศเซเนกัล ขึ้นไปถึงตอนใต้ของประเทศแองโกลา ซึ่งอยู่ทางทิศตะวันตกของทวีปแอฟริกา </Content2>
                     </Textbox2>
                     <Textbox2 style={{display: this.state.Item4 ?'block' :'none'}}>
-                    <center><img src= "/img/type_4.jpg" width = "235px"/></center>
+                    <center><img src= "/img/type_4.jpg" width = "235px" alt = "type4 mobile"/></center>
                     <Title>มานาตีอเมซอน</Title>
                     <Content2>Trichechus senegalensis (Natterer,1883)
 กระจายพันธุ์อยู่บริเวณชายฝั่งทะเลน้ำกร่อย และน้ำจืด ในประเทศเซเนกัล ขึ้นไปถึงตอนใต้ของประเทสแองโกลา ซึ่งอยู่ทางทิศตะวันตกของทวีปแอฟริกา </Content2>
                     </Textbox2>
                     <Textbox2 style={{display: this.state.Item5 ?'block' :'none'}}>
-                    <center><img src= "/img/type_5.jpg" width = "235px"/></center>
+                    <center><img src= "/img/type_5.jpg" width = "235px" alt = "type5 mobile"/></center>
                     <Title>มานาตีอินเดียตะวันตก</Title>
                     <Content2>Trichechus senegalensis (Linnarus,1758)
 กระจายพันธุ์บริเวณชายฝั่ง น้ำกร่อย และเเม่น้ำในฟลอริดา ทะเลแคริบเบียน ถึงตอนเหนือของทวีปอเมริกาใต้</Content2>    

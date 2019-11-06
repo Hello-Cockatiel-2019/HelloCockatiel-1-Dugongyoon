@@ -37,7 +37,7 @@ const Imgmol1 = styled.img`
         width: 295px;
 `;
 const Content = styled.p`
-        
+        color:#7b7b7b;
         font-weight : medium;
         font-size : 20px;
 `
@@ -82,14 +82,14 @@ export default class Bio extends React.Component{
             <Text1>
                 <Row>
                 <Col md = "auto">
-                <img src ="/img/behavior.jpg" height = "163px"/></Col>
+                <img src ="/img/behavior.jpg" alt="behavior" height = "163px"/></Col>
                 <Col>
                 <Text2>
                 <Title>พฤติกรรมและที่อาศัย</Title>
                 <Content>
-                พะยูน เป็นสัตว์ที่ตกใจง่าย ดำน้ำได้ลึก 39 เมตร ส่วนใหญ่จะดำน้ำในระดับ 10 เมตร<br/>
-                พะยูน ต้องขึ้นมาหายใจบ่อยๆ ทุกๆ 2-3 นาที สามารถว่ายน้ำเร็ว 1.8-2.2 กม./ชม.<br/>
-                พะยูน จะอาศัยอยู่ในบริเวณชายฝั่งที่มีแนวหญ้าทะเลในทะเลเขตร้อนและทะเลเขตกึ่งร้อน<br/>
+                - เป็นสัตว์ที่ตกใจง่าย ดำน้ำได้ลึก 39 เมตร ส่วนใหญ่จะดำน้ำในระดับ 10 เมตร <br/>
+- ต้องขึ้นมาหายใจบ่อยๆ ทุกๆ 2-3 นาที สามารถว่ายน้ำเร็ว 1.8-2.2 กม./ชม.<br/>
+- จะอาศัยอยู่ในบริเวณชายฝั่งที่มีแนวหญ้าทะเลในทะเลเขตร้อนและทะเลเขตกึ่งร้อน<br/>
                 </Content>
                 </Text2>
                 </Col>
@@ -98,12 +98,13 @@ export default class Bio extends React.Component{
             <Text1>
                 <Row>
                 <Col md = "auto">
-                <img src ="/img/food.jpg" height = "163px"/></Col>
+                <img src ="/img/food.jpg" alt="food" height = "163px"/></Col>
                 <Col>
                 <Text2>
                 <Title>อาหาร</Title>
                 <Content>
-                อาหารของพะยูน ได้แก่ หญ้าทะเลชนิตต่างๆ ประมาณ 12 ชนิด พะยูนใช้ชีวิตส่วนใหญ่กับการกินอาหาร และอาศัยอยู่ใกล้ ๆ บริเวณี่มีหญ้าทะเลอุดมสมบูรณ์ สามารถกินอาหารได้ตลอดเวลาทั้งกลางวันและกลางคืน เนื่องจากการมองเห็นของพะยูนไม่ชัดเจนจึงจะใช้การดมกลิ่น เพื่อหาอาหารและใช้หนวดในการสัมผัสสิ่งรอบๆตัว
+                อาหารของพะยูน ได้แก่ หญ้าทะเลชนิดต่างๆ ประมาณ 12 ชนิด พะยูน ใช้ชีวิตส่วนใหญ่กับการกินอาหาร และอาศัยอยู่ใกล้ ๆ บริเวณที่มีหญ้าทะเลอุดมสมบูรณ์ สามารถกินอาหารได้ตลอดเวลาทั้งกลางวันและกลางคืน
+เนื่องจากการมองเห็นของพะยูนไม่ชัดเจน จึงจะใช้การดมกลิ่นเพื่อหาอาหาร และใช้หนวดในการสัมผัสสิ่งรอบ ๆ ตัว
                 </Content>
                 </Text2>
                 </Col>
@@ -112,7 +113,7 @@ export default class Bio extends React.Component{
             <Text1>
                 <Row>
                 <Col md = "auto">
-                <img src ="/img/reproduce.jpg" height = "163px"/></Col>
+                <img src ="/img/reproduce.jpg" alt="reproduce" height = "163px"/></Col>
                 <Col>
                 <Text2>
                 <Title>การสืบพันธุ์</Title>
@@ -127,11 +128,11 @@ export default class Bio extends React.Component{
             </Desktop>
             <Mobile>
             <Img1>
-            <Imgmol1 src ="/img/biology.png"/>
+            <Imgmol1 src ="/img/biology.png" alt ="biology logo"/>
             </Img1>
             <Textbox>
                 <Title1>พฤติกรรมและที่อาศัย</Title1>
-                <center><img src = "/img/behavior.jpg" width="235px"/></center>
+                <center><img src = "/img/behavior.jpg" alt="behavior" width="235px"/></center>
                 <Content1>
                 - เป็นสัตว์ที่ตกใจง่าย <br/>
                 - ดำน้ำได้ลึก 39 เมตร ส่วนใหญ่จะดำน้ำในระดับ 10 เมตร <br/>
@@ -142,14 +143,14 @@ export default class Bio extends React.Component{
             </Textbox>
             <Textbox>
                 <Title1>อาหาร</Title1>
-                <center><img src = "/img/food.jpg" width="235px"/></center>
+                <center><img src = "/img/food.jpg" alt="food" width="235px"/></center>
                 <Content2>
                 อาหารของพะยูน ได้แก่ หญ้าทะเลชนิตต่าง ๆ ประมาณ 12 ชนิด พะยูน ใช้ชีวิตส่วนใหญ่กับการกินอาหาร และอาศัยอยู่ใกล้ๆ บริเวณที่มีหญ้าทะเลอุดมสมบูรณ์ สามารถกินอาหารได้ตลอดเวลาทั้งกลางวัน และกลางคืน เนื่องจากการมองเห็นของพะยูนไม่ชัดเจน จึงจะใช้การดมกลิ่นเพื่อหาอาหาร และใช้หนวดในการสัมผัสสิ่งรอบๆ ตัว
                 </Content2>
             </Textbox>
             <Textbox>
                 <Title1>การสืบพันธุ์</Title1>
-                <center><img src = "/img/reproduce.jpg" width="235px"/></center>
+                <center><img src = "/img/reproduce.jpg" alt="reproduce" width="235px"/></center>
                 <Content2>
                 พะยูนจะเข้าสู่วัยเจริญพันธุ์ประมาณอายุ 9-10 ปี ส่วนพะยูนตัวเมียตั้งท้องนาน 13-14 เดือน ออกลูกครั้งละ 1 ตัวและทิ้งระยะ 3-7 ปี ลูกพะยูน แรกเกิดมีความยาว 1-1.25 เมตร และน้ำหนักประมาณ20-35 กิโลกรัม ลูกพะยูนจะอาศัยอยู่กับแม่ตลอดเวลา ประมาณ 1-2 ปี
                 </Content2>
